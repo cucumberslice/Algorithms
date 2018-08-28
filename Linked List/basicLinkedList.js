@@ -51,4 +51,9 @@ class LinkedList{
             node = node.next;
         }
     }
+
+    //empty out the node
+    clear() {
+        this.head = null;
+    }
 }
