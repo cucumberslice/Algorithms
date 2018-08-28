@@ -35,4 +35,20 @@ class LinkedList{
     getFirst() {
         return this.head;
     }
+
+    //get the last node
+
+    getLast() {
+
+        let node = this.head;
+
+        while(node) {
+
+            if(node.next === null) {
+                return node;
+            }
+
+            node = node.next;
+        }
+    }
 }
