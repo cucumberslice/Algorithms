@@ -29,4 +29,10 @@ class LinkedList{
         }
         return counter;
     }
+
+    //get the first node
+
+    getFirst() {
+        return this.head;
+    }
 }
