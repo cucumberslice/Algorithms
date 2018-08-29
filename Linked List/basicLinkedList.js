@@ -92,4 +92,28 @@ class LinkedList{
             last.next = new Node(val, null)
         }
     }
+
+    getAt(idx) {
+
+        if(!this.head) {
+            return null;
+        }
+
+        let node = this.head
+        let counter = 0;
+
+        while(node) {
+            if(idx === counter) {
+                return node
+            }
+            node = node.next;
+            counter++
+            
+        }
+        return null;
+
+        
+        
+
+    }
 }
