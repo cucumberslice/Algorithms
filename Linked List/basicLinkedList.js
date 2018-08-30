@@ -86,10 +86,13 @@ class LinkedList{
 
     //use the getLast() to get the last node
     insertLast(val) {
-        let last = this.getLast();
+        let last = this.getLast()
+        if(last) {
+            last.next = new Node(val)
+        } else {
 
-        if(last.next === null) {
-            last.next = new Node(val, null)
+            this.head = new Node(val)
+
         }
     }
 
