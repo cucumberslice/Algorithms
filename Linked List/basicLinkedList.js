@@ -114,9 +114,27 @@ class LinkedList{
             
         }
         return null;
+    }
+
+    removeAt(idx) {
+
+        if(!this.head) {
+            return null;
+        }
 
         
+        if(idx === 0) {
+            this.head = this.head.next
+            return
+        }
+
+        const previous = this.getAt(idx-1)
+        if(!previous || !previous.next) {
+            return;
+        }
+        previous.next = previous.next.next
         
 
     }
+
 }
