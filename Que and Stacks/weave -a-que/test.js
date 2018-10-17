@@ -1,4 +1,4 @@
-const weave = require('./index');
+const weave = require('./test');
 const Queue = require('./Queue');
 
 test('queues have a peek function', () => {
